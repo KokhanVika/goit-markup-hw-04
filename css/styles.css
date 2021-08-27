@@ -374,7 +374,7 @@ img {
     color:var(--main-title-color);
     margin-bottom: 20px;
 }
-.social-list-icon-footer {
+.social-icon-footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -384,8 +384,8 @@ img {
     fill: var(--main-title-color);
     background-color: rgba(255, 255, 255, 0.1);
 }
-.social-list-icon-footer:hover,
-.social-list-icon-footer:focus {
+.social-icon-footer:hover,
+.social-icon-footer:focus {
 background-color: var(--accent-color);
 }
 
@@ -430,6 +430,14 @@ background-color: var(--accent-color);
     flex-basis: calc(100%/3 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
+}
+.menu-item:hover,
+.menu-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card {
+    cursor: pointer;
 }
 /*-текст под картинкой-*/
 .card-content {
