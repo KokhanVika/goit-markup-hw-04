@@ -103,6 +103,11 @@ img {
     display: flex;
     align-items: center;
 }
+.header-contact-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
 .header-logo-span, .header-link, .section-title {
     color: var(--second-title-color);
 }
@@ -110,13 +115,14 @@ img {
     margin-right: 93px;
     padding: 24px 0 25px 0;
 }
-
+.header-link {
+    display: block;
+}
 .header-link, .header-mail, .header-tel {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
 .header-mail, .header-tel {
    color: var(--main-text-color);
    display: flex;
@@ -133,11 +139,6 @@ img {
 
 .header-item:not(:last-child) {
     margin-right: 50px;
-}
-.header-contact-list {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
 }
 
 .header-contact:not(:last-child) {
@@ -208,12 +209,11 @@ img {
 }
 .benefits-list {
     display: flex;
-    flex-basis: calc((100% - 30px)/3);
-    margin-left: -30px;
+        margin-left: -30px;
     margin-top: -30px;
 }
 .benefits-item {
-    flex-basis: calc((100% - 30px)/3);
+    flex-basis: calc(100%/3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
 }
@@ -237,7 +237,7 @@ img {
     margin-top: -30px;
 }
 .work-img {
-    flex-basis: calc((100% - 30px)/3);
+    flex-basis: calc(100%/3 - 30px);
     margin-left: 30px;
     margin-top: 30px; 
 }
@@ -391,9 +391,7 @@ background-color: var(--accent-color);
 
 
 /*-Portfolio-*/
-/*.section-filtr {
-    display: flex;
-} */  
+ 
 /*-стили кнопок-*/
 .filtr-list {
     display: flex;
@@ -442,6 +440,7 @@ background-color: var(--accent-color);
 
 .card {
     cursor: pointer;
+    color: inherit;
 }
 /*-текст под картинкой-*/
 .card-content {
@@ -449,7 +448,6 @@ background-color: var(--accent-color);
     background-color: var(--bg-color);
     border:  1px solid #EEEEEE;
     border-top:  0;
-    
 }
 .menu-name {
     font-weight: bold;
@@ -461,7 +459,7 @@ background-color: var(--accent-color);
 .menu-text {
     font-size: 16px;
     line-height: 1.87;
-    }
+}
 
 
 
